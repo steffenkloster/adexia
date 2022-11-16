@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Akira";
+  src: local("Akira"), url(./fonts/Akira.otf) format("opentype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+.akira {
+  font-family: Akira;
+}
+
+.hard-shadow {
+  filter: drop-shadow(0 5px 5px rgb(0 0 0 / 0.75));
+}
+
+.glow {
+  text-shadow: 0 0 10px #fc3bfd;
+}
+
+.soundcloud-color {
+  @apply transition-opacity duration-500;
+  opacity: 0;
+  filter: invert(42%) sepia(58%) saturate(1732%) hue-rotate(4deg)
+    brightness(107%) contrast(106%);
+}
+
+.soundcloud:hover + .soundcloud-color {
+  opacity: 1;
+}
+
+body {
+  background: url("/background2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  min-height: 100vh;
+}
