@@ -2,7 +2,7 @@ FROM node:14.15.1 as dist
 WORKDIR /app
 COPY . .
 RUN npm ci
-RUN npm run dist
+RUN npm run build
 
 FROM socialengine/nginx-spa:latest
 COPY --from=dist /app/dist /app
