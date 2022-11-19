@@ -8,10 +8,10 @@ function App() {
   const audioRef = useRef(new Audio("/adexia.mp3"));
 
   const gigs = [
-    { date: "01/01/01", location: "BAGGEN", time: "23-05" },
-    { date: "01/01/01", location: "Den Anden Side", time: "23-05" },
-    { date: "01/01/01", location: "Berghain", time: "23-05" },
-    { date: "01/01/01", location: "Cosy", time: "23-05" },
+    // { date: "01/01/01", location: "BAGGEN", time: "23-05" },
+    // { date: "01/01/01", location: "Den Anden Side", time: "23-05" },
+    // { date: "01/01/01", location: "Berghain", time: "23-05" },
+    // { date: "01/01/01", location: "Cosy", time: "23-05" },
   ];
 
   const togglePlaying = () => {
@@ -74,6 +74,10 @@ function App() {
                 src="/soundcloud.png"
                 className="absolute h-8 sm:h-12 soundcloud-color pointer-events-none"
               />
+              {/* <img
+                src="/instagram.png"
+                className="absolute h-8 sm:h-12 soundcloud-color pointer-events-none"
+              /> */}
             </div>
           </a>
         </div>
